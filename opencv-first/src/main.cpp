@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     cv::Mat image = cv::imread("pic.png");
     if (image.empty()) {
-        cout << "a";
+        cout << "Read error" << endl;
         return 1;
     }
     cv::cvtColor(image, image, cv::COLOR_BGR2GRAY);
