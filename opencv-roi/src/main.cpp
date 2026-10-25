@@ -9,6 +9,7 @@ int main() {
     }
     cv::Rect rect(200, 0, 400, 400);
     cv::Mat roi = image(rect);
+    cv::imwrite("new.png", roi);
     cv::imshow("Image", roi);
     cv::waitKey(0);
     cv::destroyAllWindows();
